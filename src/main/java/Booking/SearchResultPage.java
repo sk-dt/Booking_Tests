@@ -46,7 +46,9 @@ public class SearchResultPage extends BasePageUtil {
 
     public HotelPage clickOpenHotelPageButton(Integer hotelNumber) throws Exception {
         log.info("Opening hotel page");
+        sleep(2000);
         click(openHotelPage.get(hotelNumber));
+        sleep(2000);
         switchToNextTab();
         return new HotelPage();
     }
@@ -126,7 +128,7 @@ public class SearchResultPage extends BasePageUtil {
     }
 
     public List<Integer> getMinAndMaxPricesFromPage(String currency) throws Exception {
-        log.info("Getting values for Min and Max price from filter");
+        log.info("Getting values for Min and Max price from page");
         List<Integer> priceRange = new ArrayList<>();
         priceRange.add(getPriceWithoutCurrency(priveFields.get(0).getText(), currency));
         clickOnLastPageOnPagination();

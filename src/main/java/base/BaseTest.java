@@ -47,8 +47,7 @@ public class BaseTest {
 
     protected final void throwIfVerificationFailed() throws UnLoggingException {
         if (TestManager.getTest().getHasFails()) {
-            throw new UnLoggingException("Test has uncritical errors." + (TestManager.getTest().getErrorMessage() == null ? "" :
-                    "\nVerify message is: " + TestManager.getTest().getErrorMessage()));
+            throw new UnLoggingException("Test has uncritical errors.");
         }
     }
 }
