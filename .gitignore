@@ -1,4 +1,7 @@
 *~
-.idea/
-target/
-Test.iml/Booking.iml
+
+.idea
+/
+target
+Test.iml
+Booking.iml
