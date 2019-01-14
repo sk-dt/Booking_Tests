@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Booking">
+    <test name="Booking">
+        <classes>
+            <class name="Booking.BookingTest">
+                <methods>
+                    <include name="CheckAvailableRooms"/>
+                    <include name="CheckCurrency"/>
+                    <include name="CheckLanguage"/>
+                    <include name="CheckLowestPriceSorting"/>
+                    <include name="CheckFilterByPriceRange"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
